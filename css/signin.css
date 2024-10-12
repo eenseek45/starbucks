@@ -1,0 +1,81 @@
+.signin {
+    margin-top: 120px;
+    padding: 100px 0 150px;
+    background-image: url("../images/signin_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 스크롤할 대 요소와 같이 스크롤하지 않는다. 뷰포트에 고정 */
+    background-size: cover; /* 뷰포트의 더 넓은 크기에 맞게 */
+}
+.signin h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.signin .signin__card {
+    width: 500px;
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    border-radius: 6px;
+    background-color: #F6F5F0;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.3); /* 그림자 */
+    color: #555;
+}
+.signin .signin__card h2 {
+    /* background-color: royalblue; */
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* 구분선 */
+}
+
+.signin__card h2 strong {
+    font-weight: 700;
+    color: #006633;
+}
+
+.signin__card form {
+    padding: 30px 22px; /* 약간 떨어지도록 */
+}
+.signin__card form input {
+    width: 100%; /* 최대한 늘려서 */
+    margin-bottom: 12px;
+    padding: 15px; /* 내부여백 */
+    border: 1px solid #ddd; /* 박스 */
+    border-radius: 4px;
+    outline: none; /* 선택했을때 생기는 아웃라인 */
+    box-sizing: border-box; /* 삐져나간 부분은 안쪽으로 들어온다 (중요!!) */
+    font-size: 14px;
+}
+.signin__card form [type="submit"] {
+    background-color: #006633; /* 제출버튼색상 */
+    border: none;
+    color: #fff; /* 글자색상 */
+    font-size: 20px;
+    cursor: pointer;
+}
+.signin__card form p { /* paragraph */
+    font-size: 12px;
+    color: #006633;
+    text-align: center;
+}
+.signin__card .actions {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+.signin__card .actions a {
+    flex-grow: 1;  /* 모든 a태그 같은 비율로 */
+    flex-basis: 0; /* 여백없음 */
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+}
+.signin__card .actions a:last-child {
+    border-right: none;
+}
+.signin__card .actions a:hover {
+    text-decoration: underline;
+}
